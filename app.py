@@ -112,11 +112,23 @@ def update_dashboard(n):
     cards = []
     for key in METRIC_ORDER:
         val = metrics.get(key, "--")
+
+        # Format number: round to 2 decimal places if it's a number
+        try:
+            num_val = float(val)
+            formatted_val = f"{num_val:.2f}"
+        except:
+            formatted_val = str(val)
+
+        # Add % symbol to percent fields
+        if key in ["LIVE%", "MAX%", "MIN%"]:
+            formatted_val += "%"
+
         cards.append(
             html.Div([
-                html.Div(str(val), style={
+                html.Div(formatted_val, style={
                     "fontSize":"22px", "fontWeight":"bold",
-                    "color":"crimson" if str(val).startswith("-") else "#2c3e50"
+                    "color":"crimson" if formatted_val.startswith("-") else "#2c3e50"
                 }),
                 html.Div(key, style={"fontSize":"12px", "color":"#555"})
             ], style={
