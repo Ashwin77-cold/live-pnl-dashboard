@@ -5,7 +5,7 @@ import pandas as pd
 import plotly.graph_objs as go
 
 # ─── CONFIG ───────────────────────────────────────────────────────────────
-EXCEL_PATH = r"C:\API_Trade\LIVE_PNL.xltm"
+EXCEL_PATH = "LIVE_PNL.xltm"
 # exact order you want them displayed
 METRIC_ORDER = ["LIVE%", "MAX%", "MIN%", "LIVE_PNL", "SPOT", "MARGIN", "TIME"]
 
