@@ -24,11 +24,21 @@ def load_data():
     return df
 
 def load_metrics():
-    # your CHART sheet has Key / Value rows
-    df = pd.read_excel(EXCEL_PATH, sheet_name="CHART", index_col=0)
-    vals = df.iloc[:, 0].to_dict()
-    # ensure keys are strings like "LIVE%", etc.
-    return vals
+    # Read CHART sheet without headers
+    df = pd.read_excel(EXCEL_PATH, sheet_name="CHART", header=None)
+
+    # Map specific cells to your metrics
+    metrics = {
+        "LIVE%": df.iat[0, 0],    # A1
+        "MAX%": df.iat[0, 1],     # B1
+        "MIN%": df.iat[0, 2],     # C1
+        "LIVE_PNL": df.iat[0, 3], # D1
+        "SPOT": df.iat[0, 5],     # F1
+        "MARGIN": df.iat[0, 7],   # H1
+        "TIME": df.iat[0, 10],    # K1
+    }
+
+    return metrics
 
 # ─── CHART CREATION ───────────────────────────────────────────────────────
 def make_figure(df):
