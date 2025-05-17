@@ -1,0 +1,35 @@
+name: Build Static Dashboard
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '*/10 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Generate static HTML
+        run: python generate_static.py
+
+      - name: Commit & push docs/
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "chore: rebuild static dashboard 🌐"
+          file_pattern: docs/index.html
+          branch: gh-pages
