@@ -4,14 +4,14 @@ on:
   push:
     branches: [ main ]
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '*/10 * * * *'   # every 10 minutes
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repo
         uses: actions/checkout@v3
 
       - name: Set up Python 3.10
@@ -27,7 +27,7 @@ jobs:
       - name: Generate static HTML
         run: python generate_static.py
 
-      - name: Commit & push docs/
+      - name: Commit & Push docs/
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "chore: rebuild static dashboard 🌐"
