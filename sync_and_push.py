@@ -20,7 +20,7 @@ def run_git(command):
 
 print("📦 Committing and pushing to main...")
 run_git("git add docs/index.html")
-run_git("git commit -m \"Auto: update dashboard from Task Scheduler\"")
+run_git("git commit -m \"Auto: update dashboard from sync script\"")
 run_git("git push origin main")
 
 print("🌍 Pushing to gh-pages...")
