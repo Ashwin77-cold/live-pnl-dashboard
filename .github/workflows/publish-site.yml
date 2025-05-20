@@ -1,0 +1,32 @@
+name: Build & Publish Public Dashboard
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies & build
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          python generate_static.py
+
+      - name: Push generated site to public repo
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          repository: Ashwin77-cold/live-pnl-dashboard-site
+          github_token: ${{ secrets.PUBLIC_REPO_PAT }}
+          directory: docs
+          branch: main
