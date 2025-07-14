@@ -356,7 +356,7 @@
         <div class="metrics-grid">
 
             <div class="metric-card">
-                <div class="metric-value positive">0.00%</div>
+                <div class="metric-value positive">-0.00%</div>
                 <div class="metric-label">📈 Live%</div>
             </div>
 
@@ -366,17 +366,17 @@
             </div>
 
             <div class="metric-card">
-                <div class="metric-value positive">0.00%</div>
+                <div class="metric-value positive">-0.00%</div>
                 <div class="metric-label">📉 Min</div>
             </div>
 
             <div class="metric-card">
-                <div class="metric-value positive">7.7K</div>
+                <div class="metric-value negative">-14.5K</div>
                 <div class="metric-label">💰 Live P&L</div>
             </div>
 
             <div class="metric-card">
-                <div class="metric-value neutral">82296.10</div>
+                <div class="metric-value neutral">82324.49</div>
                 <div class="metric-label">📊 Spot Price</div>
             </div>
 
@@ -386,7 +386,7 @@
             </div>
 
             <div class="metric-card">
-                <div class="metric-value neutral">09:17:13</div>
+                <div class="metric-value neutral">09:18:14</div>
                 <div class="metric-label">⏰ Last Update</div>
             </div>
 
@@ -406,9 +406,9 @@
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-        const labels    = ["09:15:08", "09:16:09", "09:16:41", "09:17:11"];
-        const pnlData   = [0.0, 0.0, 0.0, 7656.5];
-        const spotData  = [82434.06, 82378.89, 82357.58, 82296.23];
+        const labels    = ["09:15:08", "09:16:09", "09:16:41", "09:17:11", "09:18:14"];
+        const pnlData   = [0.0, 0.0, 0.0, 7656.5, -14506.75];
+        const spotData  = [82434.06, 82378.89, 82357.58, 82296.23, 82324.49];
 
         new Chart(
             document.getElementById('chartCanvas').getContext('2d'),
@@ -509,7 +509,7 @@
                 <div class="table-content">
                     <table>
                         <thead>
-                            <tr><th>INDEX</th><th>PNL</th><th>PNL_%</th></tr></thead><tbody><tr><td class="">SENSEX</td><td class="loss">-1.00</td><td class="loss">-0.00%</td></tr><tr><td class="">NIFTY</td><td class="profit">7657.50</td><td class="profit">0.00%</td></tr></tbody></table></div></div>
+                            <tr><th>INDEX</th><th>PNL</th><th>PNL_%</th></tr></thead><tbody><tr><td class="">SENSEX</td><td class="profit">347.00</td><td class="profit">0.00%</td></tr><tr><td class="">NIFTY</td><td class="loss">-14853.75</td><td class="loss">-0.00%</td></tr></tbody></table></div></div>
         </div>
         
         <!-- Large Tables Column (One below another) -->
@@ -519,7 +519,7 @@
                 <div class="table-content">
                     <table>
                         <thead>
-                            <tr><th>PRODUCT</th><th>LIVE_PNL</th><th>PNL%</th></tr></thead><tbody><tr><td class="">VWAP</td><td class="profit">7.6K</td><td class="profit">0.00</td></tr><tr><td class="">AWS_VWAP</td><td class="profit">15.00</td><td class="profit">0.00</td></tr><tr><td class="">AWS_NOTREND</td><td class="profit">14.00</td><td class="profit">0.00</td></tr><tr><td class="">AWS</td><td class="profit">14.51</td><td class="profit">0.00</td></tr></tbody></table></div></div><div class="table-container"><div class="table-title">🎯 Live Positions</div><div class="table-content">No Data Available</div></div>
+                            <tr><th>PRODUCT</th><th>LIVE_PNL</th><th>PNL%</th></tr></thead><tbody><tr><td class="">VWAP</td><td class="loss">-15.1K</td><td class="loss">-0.01</td></tr><tr><td class="">AWS_VWAP</td><td class="profit">11.25</td><td class="profit">0.00</td></tr><tr><td class="">AWS_NOTREND</td><td class="profit">542.00</td><td class="profit">0.02</td></tr><tr><td class="">AWS</td><td class="profit">208.04</td><td class="profit">0.02</td></tr></tbody></table></div></div><div class="table-container"><div class="table-title">🎯 Live Positions</div><div class="table-content">No Data Available</div></div>
             <div class="table-container">
                 <div class="table-title">🔢 Strike Analysis</div>
                 <div class="table-content">
