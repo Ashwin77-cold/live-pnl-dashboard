@@ -356,7 +356,7 @@
         <div class="metrics-grid">
 
             <div class="metric-card">
-                <div class="metric-value positive">-0.00%</div>
+                <div class="metric-value negative">-0.01%</div>
                 <div class="metric-label">📈 Live%</div>
             </div>
 
@@ -366,17 +366,17 @@
             </div>
 
             <div class="metric-card">
-                <div class="metric-value positive">-0.00%</div>
+                <div class="metric-value negative">-0.01%</div>
                 <div class="metric-label">📉 Min</div>
             </div>
 
             <div class="metric-card">
-                <div class="metric-value negative">-5.8K</div>
+                <div class="metric-value negative">-1.54L</div>
                 <div class="metric-label">💰 Live P&L</div>
             </div>
 
             <div class="metric-card">
-                <div class="metric-value neutral">25161.25</div>
+                <div class="metric-value neutral">25147.90</div>
                 <div class="metric-label">📊 Spot Price</div>
             </div>
 
@@ -386,7 +386,7 @@
             </div>
 
             <div class="metric-card">
-                <div class="metric-value neutral">09:18:19</div>
+                <div class="metric-value neutral">09:20:21</div>
                 <div class="metric-label">⏰ Last Update</div>
             </div>
 
@@ -406,9 +406,9 @@
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-        const labels    = ["09:15:12", "09:15:42", "09:16:44", "09:17:14", "09:17:45", "09:18:18"];
-        const pnlData   = [0.0, 0.0, 0.0, 1846.25, -2209.75, -5787.5];
-        const spotData  = [25186.6, 25170.95, 25181.25, 25166.0, 25165.95, 25161.25];
+        const labels    = ["09:15:12", "09:15:42", "09:16:44", "09:17:14", "09:17:45", "09:18:18", "09:20:21"];
+        const pnlData   = [0.0, 0.0, 0.0, 1846.25, -2209.75, -5787.5, -153844.0];
+        const spotData  = [25186.6, 25170.95, 25181.25, 25166.0, 25165.95, 25161.25, 25147.9];
 
         new Chart(
             document.getElementById('chartCanvas').getContext('2d'),
@@ -497,19 +497,19 @@
                 <div class="table-content">
                     <table>
                         <thead>
-                            <tr><th>ENTRY%</th><th>PCR</th></tr></thead><tbody><tr><td class="">0.00%</td><td class="">nan</td></tr></tbody></table></div></div>
+                            <tr><th>ENTRY%</th><th>PCR</th></tr></thead><tbody><tr><td class="">3.12%</td><td class="">1.00</td></tr></tbody></table></div></div>
             <div class="table-container">
                 <div class="table-title">⚖️ Call/Put Analysis</div>
                 <div class="table-content">
                     <table>
                         <thead>
-                            <tr><th>OPTION TYPE</th><th>QTY</th><th>OPTION%</th></tr></thead><tbody><tr><td class="">CE</td><td class="">0</td><td class="">nan%</td></tr><tr><td class="">PE</td><td class="">0</td><td class="">nan%</td></tr></tbody></table></div></div>
+                            <tr><th>OPTION TYPE</th><th>QTY</th><th>OPTION%</th></tr></thead><tbody><tr><td class="">CE</td><td class="">-22310</td><td class="">50.00%</td></tr><tr><td class="">PE</td><td class="">-22310</td><td class="">50.00%</td></tr></tbody></table></div></div>
             <div class="table-container">
                 <div class="table-title">📈 Index Performance</div>
                 <div class="table-content">
                     <table>
                         <thead>
-                            <tr><th>INDEX</th><th>PNL</th><th>PNL_%</th></tr></thead><tbody><tr><td class="">SENSEX</td><td class="profit">610.00</td><td class="profit">0.00%</td></tr><tr><td class="">NIFTY</td><td class="loss">-6397.50</td><td class="loss">-0.00%</td></tr></tbody></table></div></div>
+                            <tr><th>INDEX</th><th>PNL</th><th>PNL_%</th></tr></thead><tbody><tr><td class="">SENSEX</td><td class="loss">-74824.00</td><td class="loss">-0.01%</td></tr><tr><td class="">NIFTY</td><td class="loss">-79020.00</td><td class="loss">-0.02%</td></tr></tbody></table></div></div>
         </div>
         
         <!-- Large Tables Column (One below another) -->
@@ -519,10 +519,16 @@
                 <div class="table-content">
                     <table>
                         <thead>
-                            <tr><th>PRODUCT</th><th>LIVE_PNL</th><th>PNL%</th></tr></thead><tbody><tr><td class="">VWAP</td><td class="loss">-5.9K</td><td class="loss">-0.00</td></tr><tr><td class="">NOTREND</td><td class="profit">901.25</td><td class="profit">0.00</td></tr><tr><td class="">AWS_VWAP</td><td class="loss">-3.75</td><td class="loss">-0.00</td></tr><tr><td class="">AWS_NOTREND</td><td class="loss">-748.75</td><td class="loss">-0.03</td></tr><tr><td class="">AWS</td><td class="loss">-314.96</td><td class="loss">-0.02</td></tr></tbody></table></div></div><div class="table-container"><div class="table-title">🎯 Live Positions</div><div class="table-content">No Data Available</div></div>
+                            <tr><th>PRODUCT</th><th>LIVE_PNL</th><th>PNL%</th></tr></thead><tbody><tr><td class="">VWAP</td><td class="loss">-1.8K</td><td class="loss">-0.00</td></tr><tr><td class="">XYT</td><td class="profit">12.8K</td><td class="profit">0.01</td></tr><tr><td class="">NOTREND</td><td class="loss">-1.63L</td><td class="loss">-0.07</td></tr><tr><td class="">AWS_XYT</td><td class="profit">15.00</td><td class="profit">0.00</td></tr><tr><td class="">AWS_NOTREND</td><td class="loss">-1.5K</td><td class="loss">-0.07</td></tr><tr><td class="">AWS</td><td class="loss">-626.78</td><td class="loss">-0.04</td></tr></tbody></table></div></div>
+            <div class="table-container">
+                <div class="table-title">🎯 Live Positions</div>
+                <div class="table-content">
+                    <table>
+                        <thead>
+                            <tr><th>PRODUCT</th><th>SYMBOL</th><th>STRIKE</th><th>OPTION TYPE</th><th>QTY</th><th>LTP</th><th>Intrinsic Value</th><th>Time Value</th></tr></thead><tbody><tr><td class="">NOTREND</td><td class="">NIFTY</td><td class="">25200</td><td class="">CE</td><td class="">-16650</td><td class="">48.05</td><td class="">0</td><td class="">48.05</td></tr><tr><td class="">NOTREND</td><td class="">SENSEX</td><td class="">82500</td><td class="">CE</td><td class="">-5660</td><td class="">408.30</td><td class="">0</td><td class="">408.30</td></tr><tr><td class="">NOTREND</td><td class="">NIFTY</td><td class="">25200</td><td class="">PE</td><td class="">-16650</td><td class="">88.85</td><td class="">53.05</td><td class="">35.80</td></tr><tr><td class="">NOTREND</td><td class="">SENSEX</td><td class="">82500</td><td class="">PE</td><td class="">-5660</td><td class="">401.35</td><td class="">52.11</td><td class="">349.24</td></tr></tbody></table></div></div>
             <div class="table-container">
                 <div class="table-title">🔢 Strike Analysis</div>
                 <div class="table-content">
                     <table>
                         <thead>
-                            <tr><th>SENSEX</th></tr></thead><tbody><tr><td class="">SPOT-2</td></tr><tr><td class="">SPOT-1</td></tr><tr><td class="">SPOT</td></tr><tr><td class="">SPOT+1</td></tr><tr><td class="">SPOT+2</td></tr><tr><td class="">CURRENT</td></tr></tbody></table></div></div>
+                            <tr><th>SENSEX</th><th>STRIKE</th><th>TOTAL PNL</th><th>NOTREND</th></tr></thead><tbody><tr><td class="">SPOT-2</td><td class="">82200</td><td class="profit">28.85L</td><td class="">2884619</td></tr><tr><td class="">SPOT-1</td><td class="">82300</td><td class="profit">34.51L</td><td class="">3450619</td></tr><tr><td class="">SPOT</td><td class="">82400</td><td class="profit">40.17L</td><td class="">4016619</td></tr><tr><td class="">SPOT+1</td><td class="">82500</td><td class="profit">45.83L</td><td class="">4582619</td></tr><tr><td class="">SPOT+2</td><td class="">82600</td><td class="profit">40.17L</td><td class="">4016619</td></tr><tr><td class="">CURRENT</td><td class="">82450</td><td class="profit">43.00L</td><td class="">4299619</td></tr></tbody></table></div></div>
