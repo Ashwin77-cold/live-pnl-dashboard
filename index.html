@@ -356,7 +356,7 @@
         <div class="metrics-grid">
 
             <div class="metric-card">
-                <div class="metric-value positive">0.06%</div>
+                <div class="metric-value positive">0.04%</div>
                 <div class="metric-label">📈 Live%</div>
             </div>
 
@@ -371,12 +371,12 @@
             </div>
 
             <div class="metric-card">
-                <div class="metric-value positive">11.59L</div>
+                <div class="metric-value positive">8.27L</div>
                 <div class="metric-label">💰 Live P&L</div>
             </div>
 
             <div class="metric-card">
-                <div class="metric-value neutral">25166.70</div>
+                <div class="metric-value neutral">25167.10</div>
                 <div class="metric-label">📊 Spot Price</div>
             </div>
 
@@ -386,7 +386,7 @@
             </div>
 
             <div class="metric-card">
-                <div class="metric-value neutral">09:56:05</div>
+                <div class="metric-value neutral">09:56:36</div>
                 <div class="metric-label">⏰ Last Update</div>
             </div>
 
@@ -406,9 +406,9 @@
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-        const labels    = ["09:26:45", "09:27:16", "09:27:47", "09:28:18", "09:28:49", "09:29:20", "09:29:52", "09:30:23", "09:30:55", "09:31:26", "09:31:59", "09:32:32", "09:33:06", "09:33:37", "09:34:09", "09:34:40", "09:35:12", "09:35:43", "09:36:14", "09:36:45", "09:38:16", "09:38:48", "09:39:19", "09:39:50", "09:40:22", "09:40:53", "09:41:24", "09:41:56", "09:42:28", "09:42:59", "09:43:31", "09:44:02", "09:44:34", "09:45:05", "09:45:36", "09:48:08", "09:48:40", "09:49:12", "09:49:44", "09:50:15", "09:50:46", "09:51:17", "09:51:49", "09:52:22", "09:52:54", "09:53:25", "09:53:57", "09:54:30", "09:55:02", "09:55:34", "09:56:05"];
-        const pnlData   = [1217008.75, 1480660.0, 1463529.0, 1785919.25, 1456744.75, 1516553.75, 1578869.0, 1843236.75, 1828008.75, 1878712.0, 1560413.75, 1613489.5, 1597692.75, 1749379.5, 1692226.0, 1261196.25, 1098784.75, 1343218.75, 1333222.25, 1007936.5, 917406.25, 1029536.75, 970772.25, 1167238.0, 1327548.0, 1143931.25, 1291517.0, 1481896.0, 1276421.0, 1471313.0, 1399444.75, 1599705.5, 1848364.0, 1718759.75, 1766118.5, 1815628.25, 2520032.0, 2619378.0, 2772749.75, 1562749.0, 1506211.75, 1607100.25, 1203392.75, 1169489.25, 1671143.25, 1838592.25, 1355555.75, 1540410.75, 1412900.5, 1047899.25, 1158867.25];
-        const spotData  = [25201.8, 25197.75, 25190.55, 25189.6, 25189.45, 25192.5, 25192.1, 25192.55, 25187.55, 25186.1, 25190.75, 25192.2, 25189.85, 25184.5, 25183.75, 25183.1, 25185.0, 25187.15, 25187.3, 25193.55, 25191.65, 25191.0, 25188.65, 25188.85, 25185.1, 25185.55, 25182.45, 25184.85, 25189.1, 25187.65, 25188.9, 25185.35, 25186.15, 25187.85, 25186.1, 25192.55, 25184.05, 25179.15, 25177.45, 25173.9, 25174.3, 25172.3, 25169.6, 25169.05, 25170.3, 25173.1, 25173.5, 25173.35, 25167.8, 25165.15, 25166.7];
+        const labels    = ["09:26:45", "09:27:16", "09:27:47", "09:28:18", "09:28:49", "09:29:20", "09:29:52", "09:30:23", "09:30:55", "09:31:26", "09:31:59", "09:32:32", "09:33:06", "09:33:37", "09:34:09", "09:34:40", "09:35:12", "09:35:43", "09:36:14", "09:36:45", "09:38:16", "09:38:48", "09:39:19", "09:39:50", "09:40:22", "09:40:53", "09:41:24", "09:41:56", "09:42:28", "09:42:59", "09:43:31", "09:44:02", "09:44:34", "09:45:05", "09:45:36", "09:48:08", "09:48:40", "09:49:12", "09:49:44", "09:50:15", "09:50:46", "09:51:17", "09:51:49", "09:52:22", "09:52:54", "09:53:25", "09:53:57", "09:54:30", "09:55:02", "09:55:34", "09:56:05", "09:56:36"];
+        const pnlData   = [1217008.75, 1480660.0, 1463529.0, 1785919.25, 1456744.75, 1516553.75, 1578869.0, 1843236.75, 1828008.75, 1878712.0, 1560413.75, 1613489.5, 1597692.75, 1749379.5, 1692226.0, 1261196.25, 1098784.75, 1343218.75, 1333222.25, 1007936.5, 917406.25, 1029536.75, 970772.25, 1167238.0, 1327548.0, 1143931.25, 1291517.0, 1481896.0, 1276421.0, 1471313.0, 1399444.75, 1599705.5, 1848364.0, 1718759.75, 1766118.5, 1815628.25, 2520032.0, 2619378.0, 2772749.75, 1562749.0, 1506211.75, 1607100.25, 1203392.75, 1169489.25, 1671143.25, 1838592.25, 1355555.75, 1540410.75, 1412900.5, 1047899.25, 1158867.25, 827302.25];
+        const spotData  = [25201.8, 25197.75, 25190.55, 25189.6, 25189.45, 25192.5, 25192.1, 25192.55, 25187.55, 25186.1, 25190.75, 25192.2, 25189.85, 25184.5, 25183.75, 25183.1, 25185.0, 25187.15, 25187.3, 25193.55, 25191.65, 25191.0, 25188.65, 25188.85, 25185.1, 25185.55, 25182.45, 25184.85, 25189.1, 25187.65, 25188.9, 25185.35, 25186.15, 25187.85, 25186.1, 25192.55, 25184.05, 25179.15, 25177.45, 25173.9, 25174.3, 25172.3, 25169.6, 25169.05, 25170.3, 25173.1, 25173.5, 25173.35, 25167.8, 25165.15, 25166.7, 25167.1];
 
         new Chart(
             document.getElementById('chartCanvas').getContext('2d'),
@@ -519,7 +519,7 @@
                 <div class="table-content">
                     <table>
                         <thead>
-                            <tr><th>ADMINS</th><th>Total_pnl</th><th>COMMITTED_CAPITAL</th><th>AVG_LIVEPNL%</th><th>MAX_LIVEPNL%</th><th>MIN_LIVEPNL%</th></tr></thead><tbody><tr><td class="">Admin_1</td><td class="profit">1.48L</td><td class="">268000000</td><td class="profit">0.06</td><td class="profit">0.05</td><td class="profit">0.04</td></tr><tr><td class="">Admin_2</td><td class="profit">90.1K</td><td class="">118200000</td><td class="profit">0.08</td><td class="profit">0.09</td><td class="loss">-0.00</td></tr><tr><td class="">Admin_3</td><td class="profit">1.51L</td><td class="">205425000</td><td class="profit">0.07</td><td class="profit">0.06</td><td class="profit">0.02</td></tr><tr><td class="">Admin_4</td><td class="profit">2.05L</td><td class="">339375000</td><td class="profit">0.06</td><td class="profit">0.06</td><td class="profit">0.01</td></tr><tr><td class="">Admin_5</td><td class="profit">4.76L</td><td class="">975750000</td><td class="profit">0.05</td><td class="profit">0.04</td><td class="profit">0.00</td></tr><tr><td class="">Admin_6</td><td class="profit">15.5K</td><td class="">22650000</td><td class="profit">0.07</td><td class="profit">0.05</td><td class="profit">0.04</td></tr></tbody></table></div></div>
+                            <tr><th>ADMINS</th><th>Total_pnl</th><th>COMMITTED_CAPITAL</th><th>AVG_LIVEPNL%</th><th>MAX_LIVEPNL%</th><th>MIN_LIVEPNL%</th></tr></thead><tbody><tr><td class="">Admin_1</td><td class="profit">1.09L</td><td class="">268000000</td><td class="profit">0.04</td><td class="profit">0.04</td><td class="profit">0.03</td></tr><tr><td class="">Admin_2</td><td class="profit">69.3K</td><td class="">118200000</td><td class="profit">0.06</td><td class="profit">0.08</td><td class="loss">-0.01</td></tr><tr><td class="">Admin_3</td><td class="profit">1.15L</td><td class="">205425000</td><td class="profit">0.06</td><td class="profit">0.05</td><td class="profit">0.01</td></tr><tr><td class="">Admin_4</td><td class="profit">1.45L</td><td class="">339375000</td><td class="profit">0.04</td><td class="profit">0.04</td><td class="profit">0.01</td></tr><tr><td class="">Admin_5</td><td class="profit">3.21L</td><td class="">975750000</td><td class="profit">0.03</td><td class="profit">0.03</td><td class="profit">0.00</td></tr><tr><td class="">Admin_6</td><td class="profit">12.0K</td><td class="">22650000</td><td class="profit">0.05</td><td class="profit">0.04</td><td class="profit">0.03</td></tr></tbody></table></div></div>
             <div class="table-container">
                 <div class="table-title">💼 Live Products</div>
                 <div class="table-content">
