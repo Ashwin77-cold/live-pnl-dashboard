@@ -345,9 +345,9 @@
                         <span>📅</span>
                         <span>20 Aug 2025</span>
                     </div>
-                    <div class="market-status market-closed">
+                    <div class="market-status market-live">
                         <span class="status-dot"></span>
-                        <span>Market CLOSED</span>
+                        <span>Market LIVE</span>
                     </div>
                 </div>
             </div>
@@ -376,7 +376,7 @@
             </div>
 
             <div class="metric-card">
-                <div class="metric-value neutral">24965.80</div>
+                <div class="metric-value neutral">24949.40</div>
                 <div class="metric-label">📊 Spot Price</div>
             </div>
 
@@ -386,7 +386,7 @@
             </div>
 
             <div class="metric-card">
-                <div class="metric-value neutral">09:14:40</div>
+                <div class="metric-value neutral">09:15:12</div>
                 <div class="metric-label">⏰ Last Update</div>
             </div>
 
@@ -406,9 +406,9 @@
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-        const labels    = ["09:14:39"];
-        const pnlData   = [0.0];
-        const spotData  = [24965.8];
+        const labels    = ["09:14:39", "09:15:11"];
+        const pnlData   = [0.0, 0.0];
+        const spotData  = [24965.8, 24949.4];
 
         new Chart(
             document.getElementById('chartCanvas').getContext('2d'),
