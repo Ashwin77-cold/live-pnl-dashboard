@@ -356,12 +356,12 @@
         <div class="metrics-grid">
 
             <div class="metric-card">
-                <div class="metric-value positive">0.01%</div>
+                <div class="metric-value positive">0.03%</div>
                 <div class="metric-label">📈 Live%</div>
             </div>
 
             <div class="metric-card">
-                <div class="metric-value positive">0.01%</div>
+                <div class="metric-value positive">0.03%</div>
                 <div class="metric-label">🚀 Max</div>
             </div>
 
@@ -371,12 +371,12 @@
             </div>
 
             <div class="metric-card">
-                <div class="metric-value positive">1.22L</div>
+                <div class="metric-value positive">5.44L</div>
                 <div class="metric-label">💰 Live P&L</div>
             </div>
 
             <div class="metric-card">
-                <div class="metric-value neutral">81575.40</div>
+                <div class="metric-value neutral">81545.68</div>
                 <div class="metric-label">📊 Spot Price</div>
             </div>
 
@@ -386,7 +386,7 @@
             </div>
 
             <div class="metric-card">
-                <div class="metric-value neutral">09:28:19</div>
+                <div class="metric-value neutral">09:28:51</div>
                 <div class="metric-label">⏰ Last Update</div>
             </div>
 
@@ -406,9 +406,9 @@
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-        const labels    = ["09:16:18", "09:16:49", "09:17:20", "09:17:50", "09:18:20", "09:18:50", "09:19:20", "09:19:50", "09:20:22", "09:20:52", "09:21:23", "09:21:54", "09:22:26", "09:22:58", "09:23:30", "09:24:02", "09:24:33", "09:25:06", "09:25:38", "09:26:09", "09:26:41", "09:27:13", "09:27:46", "09:28:17"];
-        const pnlData   = [0.0, 0.0, 0.0, 0.0, 0.0, -4933.0, -7267.0, -46446.0, -6512.0, -69835.0, 67508.0, 152174.0, 149737.75, -34855.25, 92485.75, 120169.25, -13353.0, 55182.0, 63683.25, 86488.5, 123704.5, 36346.0, 257530.25, 122367.25];
-        const spotData  = [81385.97, 81395.67, 81390.74, 81392.73, 81467.13, 81496.72, 81506.12, 81528.3, 81523.49, 81570.52, 81528.74, 81518.65, 81526.48, 81552.53, 81552.01, 81537.33, 81554.4, 81536.5, 81548.7, 81545.32, 81538.24, 81533.28, 81556.49, 81575.4];
+        const labels    = ["09:16:18", "09:16:49", "09:17:20", "09:17:50", "09:18:20", "09:18:50", "09:19:20", "09:19:50", "09:20:22", "09:20:52", "09:21:23", "09:21:54", "09:22:26", "09:22:58", "09:23:30", "09:24:02", "09:24:33", "09:25:06", "09:25:38", "09:26:09", "09:26:41", "09:27:13", "09:27:46", "09:28:17", "09:28:50"];
+        const pnlData   = [0.0, 0.0, 0.0, 0.0, 0.0, -4933.0, -7267.0, -46446.0, -6512.0, -69835.0, 67508.0, 152174.0, 149737.75, -34855.25, 92485.75, 120169.25, -13353.0, 55182.0, 63683.25, 86488.5, 123704.5, 36346.0, 257530.25, 122367.25, 543887.25];
+        const spotData  = [81385.97, 81395.67, 81390.74, 81392.73, 81467.13, 81496.72, 81506.12, 81528.3, 81523.49, 81570.52, 81528.74, 81518.65, 81526.48, 81552.53, 81552.01, 81537.33, 81554.4, 81536.5, 81548.7, 81545.32, 81538.24, 81533.28, 81556.49, 81575.4, 81545.68];
 
         new Chart(
             document.getElementById('chartCanvas').getContext('2d'),
@@ -519,7 +519,7 @@
                 <div class="table-content">
                     <table>
                         <thead>
-                            <tr><th>ADMINS</th><th>Total_pnl</th><th>MARGIN.1</th><th>AVG_LIVEPNL%</th><th>MAX_LIVEPNL%</th><th>MIN_LIVEPNL%</th></tr></thead><tbody><tr><td class="">Admin_1</td><td class="profit">5.9K</td><td class="">74999999.25</td><td class="profit">0.01</td><td class="profit">0.01</td><td class="profit">0.01</td></tr><tr><td class="">Admin_2</td><td class="profit">9.5K</td><td class="">83625000</td><td class="profit">0.01</td><td class="profit">0.02</td><td class="profit">0.00</td></tr><tr><td class="">Admin_3</td><td class="profit">12.1K</td><td class="">105750000</td><td class="profit">0.01</td><td class="profit">0.02</td><td class="profit">0.01</td></tr><tr><td class="">Admin_4</td><td class="profit">18.3K</td><td class="">201750000</td><td class="profit">0.01</td><td class="profit">0.02</td><td class="profit">0.01</td></tr><tr><td class="">Admin_5</td><td class="profit">26.9K</td><td class="">420375000</td><td class="profit">0.01</td><td class="profit">0.01</td><td class="profit">0.00</td></tr><tr><td class="">Admin_6</td><td class="profit">4.0K</td><td class="">24600000</td><td class="profit">0.02</td><td class="profit">0.02</td><td class="profit">0.01</td></tr><tr><td class="">Admin_7</td><td class="profit">47.0K</td><td class="">844500000</td><td class="profit">0.01</td><td class="profit">0.01</td><td class="profit">0.00</td></tr></tbody></table></div></div>
+                            <tr><th>ADMINS</th><th>Total_pnl</th><th>MARGIN.1</th><th>AVG_LIVEPNL%</th><th>MAX_LIVEPNL%</th><th>MIN_LIVEPNL%</th></tr></thead><tbody><tr><td class="">Admin_1</td><td class="profit">23.1K</td><td class="">74999999.25</td><td class="profit">0.03</td><td class="profit">0.04</td><td class="profit">0.03</td></tr><tr><td class="">Admin_2</td><td class="profit">39.8K</td><td class="">83625000</td><td class="profit">0.05</td><td class="profit">0.06</td><td class="profit">0.00</td></tr><tr><td class="">Admin_3</td><td class="profit">38.4K</td><td class="">105750000</td><td class="profit">0.04</td><td class="profit">0.04</td><td class="profit">0.03</td></tr><tr><td class="">Admin_4</td><td class="profit">75.0K</td><td class="">201750000</td><td class="profit">0.04</td><td class="profit">0.05</td><td class="profit">0.03</td></tr><tr><td class="">Admin_5</td><td class="profit">1.20L</td><td class="">420375000</td><td class="profit">0.03</td><td class="profit">0.03</td><td class="profit">0.02</td></tr><tr><td class="">Admin_6</td><td class="profit">10.7K</td><td class="">24600000</td><td class="profit">0.05</td><td class="profit">0.05</td><td class="profit">0.04</td></tr><tr><td class="">Admin_7</td><td class="profit">2.23L</td><td class="">844500000</td><td class="profit">0.03</td><td class="profit">0.03</td><td class="profit">0.02</td></tr></tbody></table></div></div>
             <div class="table-container">
                 <div class="table-title">💼 Live Products</div>
                 <div class="table-content">
