@@ -376,7 +376,7 @@
             </div>
 
             <div class="metric-card">
-                <div class="metric-value neutral">24704.55</div>
+                <div class="metric-value neutral">24746.00</div>
                 <div class="metric-label">📊 Spot Price</div>
             </div>
 
@@ -386,7 +386,7 @@
             </div>
 
             <div class="metric-card">
-                <div class="metric-value neutral">10:00:54</div>
+                <div class="metric-value neutral">10:06:18</div>
                 <div class="metric-label">⏰ Last Update</div>
             </div>
 
@@ -406,9 +406,9 @@
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-        const labels    = ["09:16:48", "09:17:51", "09:18:21", "09:19:24", "09:19:55", "09:20:25", "09:20:57", "09:21:59", "09:22:29", "09:23:01", "09:23:32", "09:24:33", "09:25:35", "09:26:05", "09:26:36", "09:27:07", "09:28:11", "09:28:41", "09:29:11", "09:29:41", "09:30:41", "09:31:11", "09:31:46", "09:32:53", "09:33:24", "09:33:54", "09:34:24", "09:34:54", "09:35:24", "09:35:54", "09:36:24", "09:36:54", "09:37:24", "09:37:54", "09:38:24", "09:38:54", "09:39:24", "09:39:54", "09:40:25", "09:40:55", "09:41:25", "09:41:55", "09:42:25", "09:42:55", "09:43:25", "09:43:55", "09:44:25", "09:44:55", "09:45:25", "09:45:55", "09:46:25", "09:46:55", "09:47:25", "09:47:55", "09:48:25", "09:48:55", "09:49:25", "09:49:55", "09:50:25", "09:50:55", "09:51:25", "09:51:55", "09:52:25", "09:52:55", "09:53:25", "09:53:55", "09:54:25", "09:54:55", "09:55:25", "09:55:55", "09:56:25", "09:56:55", "09:58:25", "09:58:55", "09:59:59"];
-        const pnlData   = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -1200.0, 450.0, 825.0, 1875.0, 56156.25, 18150.0, 105682.5, 105682.5, 105682.5, 77287.5, 82278.75, 82278.75, 82278.75, 115158.75, 115158.75, 115158.75, 115128.75, 115230.0, 115230.0, 106466.25, 106466.25, 105165.0, 105165.0, 116115.0, 116115.0, 116115.0, 116115.0, 7207.5, 7207.5, -1312.5, 18926.25, 18926.25, 18926.25, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5];
-        const spotData  = [24691.2, 24675.4, 24679.0, 24670.6, 24678.45, 24686.95, 24695.65, 24711.6, 24706.25, 24697.45, 24686.3, 24694.85, 24705.9, 24704.55, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7];
+        const labels    = ["09:16:48", "09:17:51", "09:18:21", "09:19:24", "09:19:55", "09:20:25", "09:20:57", "09:21:59", "09:22:29", "09:23:01", "09:23:32", "09:24:33", "09:25:35", "09:26:05", "09:26:36", "09:27:07", "09:28:11", "09:28:41", "09:29:11", "09:29:41", "09:30:41", "09:31:11", "09:31:46", "09:32:53", "09:33:24", "09:33:54", "09:34:24", "09:34:54", "09:35:24", "09:35:54", "09:36:24", "09:36:54", "09:37:24", "09:37:54", "09:38:24", "09:38:54", "09:39:24", "09:39:54", "09:40:25", "09:40:55", "09:41:25", "09:41:55", "09:42:25", "09:42:55", "09:43:25", "09:43:55", "09:44:25", "09:44:55", "09:45:25", "09:45:55", "09:46:25", "09:46:55", "09:47:25", "09:47:55", "09:48:25", "09:48:55", "09:49:25", "09:49:55", "09:50:25", "09:50:55", "09:51:25", "09:51:55", "09:52:25", "09:52:55", "09:53:25", "09:53:55", "09:54:25", "09:54:55", "09:55:25", "09:55:55", "09:56:25", "09:56:55", "09:58:25", "09:58:55", "09:59:59", "10:06:17"];
+        const pnlData   = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -1200.0, 450.0, 825.0, 1875.0, 56156.25, 18150.0, 105682.5, 105682.5, 105682.5, 77287.5, 82278.75, 82278.75, 82278.75, 115158.75, 115158.75, 115158.75, 115128.75, 115230.0, 115230.0, 106466.25, 106466.25, 105165.0, 105165.0, 116115.0, 116115.0, 116115.0, 116115.0, 7207.5, 7207.5, -1312.5, 18926.25, 18926.25, 18926.25, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5, 20527.5];
+        const spotData  = [24691.2, 24675.4, 24679.0, 24670.6, 24678.45, 24686.95, 24695.65, 24711.6, 24706.25, 24697.45, 24686.3, 24694.85, 24705.9, 24704.55, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24697.7, 24746.0];
 
         new Chart(
             document.getElementById('chartCanvas').getContext('2d'),
@@ -509,7 +509,7 @@
                 <div class="table-content">
                     <table>
                         <thead>
-                            <tr><th>INDEX</th><th>PNL</th><th>PNL_%</th></tr></thead><tbody><tr><td class="">SENSEX</td><td class="loss">nan</td><td class="loss">nan%</td></tr><tr><td class="">NIFTY</td><td class="loss">nan</td><td class="loss">nan%</td></tr></tbody></table></div></div>
+                            <tr><th>INDEX</th><th>PNL</th><th>PNL_%</th></tr></thead><tbody><tr><td class="">SENSEX</td><td class="profit">0.00</td><td class="loss">nan%</td></tr><tr><td class="">NIFTY</td><td class="profit">20527.50</td><td class="profit">0.00%</td></tr></tbody></table></div></div>
         </div>
         
         <!-- Large Tables Column (One below another) -->
@@ -519,7 +519,13 @@
                 <div class="table-content">
                     <table>
                         <thead>
-                            <tr><th>ADMINS</th><th>Total_pnl</th><th>MARGIN.1</th><th>AVG_LIVEPNL%</th><th>MAX_LIVEPNL%</th><th>MIN_LIVEPNL%</th></tr></thead><tbody><tr><td class="">Admin_1</td><td class="profit">41.25</td><td class="">74999999.25</td><td class="profit">0.00</td><td class="profit">0.00</td><td class="loss">-0.00</td></tr><tr><td class="">Admin_2</td><td class="profit">9.1K</td><td class="">78750000</td><td class="profit">0.01</td><td class="profit">0.06</td><td class="loss">-0.00</td></tr><tr><td class="">Admin_3</td><td class="profit">14.0K</td><td class="">116625000</td><td class="profit">0.01</td><td class="profit">0.05</td><td class="loss">-0.00</td></tr><tr><td class="">Admin_4</td><td class="profit">18.2K</td><td class="">183000000</td><td class="profit">0.01</td><td class="profit">0.04</td><td class="profit">0.00</td></tr><tr><td class="">Admin_5</td><td class="profit">1.1K</td><td class="">353625000</td><td class="profit">0.00</td><td class="profit">0.00</td><td class="loss">-0.01</td></tr><tr><td class="">Admin_6</td><td class="profit">2.0K</td><td class="">32100000</td><td class="profit">0.01</td><td class="profit">0.01</td><td class="profit">0.01</td></tr><tr><td class="">Admin_7</td><td class="loss">-11.0K</td><td class="">907250000.25</td><td class="loss">-0.00</td><td class="profit">0.00</td><td class="loss">-0.00</td></tr></tbody></table></div></div><div class="table-container"><div class="table-title">💼 Live Products</div><div class="table-content">No Data Available</div></div><div class="table-container"><div class="table-title">🎯 Live Positions</div><div class="table-content">No Data Available</div></div>
+                            <tr><th>ADMINS</th><th>Total_pnl</th><th>MARGIN.1</th><th>AVG_LIVEPNL%</th><th>MAX_LIVEPNL%</th><th>MIN_LIVEPNL%</th></tr></thead><tbody><tr><td class="">Admin_1</td><td class="profit">41.25</td><td class="">74999999.25</td><td class="profit">0.00</td><td class="profit">0.00</td><td class="loss">-0.00</td></tr><tr><td class="">Admin_2</td><td class="profit">9.1K</td><td class="">78750000</td><td class="profit">0.01</td><td class="profit">0.06</td><td class="loss">-0.00</td></tr><tr><td class="">Admin_3</td><td class="profit">14.0K</td><td class="">116625000</td><td class="profit">0.01</td><td class="profit">0.05</td><td class="loss">-0.00</td></tr><tr><td class="">Admin_4</td><td class="profit">18.2K</td><td class="">183000000</td><td class="profit">0.01</td><td class="profit">0.04</td><td class="profit">0.00</td></tr><tr><td class="">Admin_5</td><td class="profit">1.1K</td><td class="">353625000</td><td class="profit">0.00</td><td class="profit">0.00</td><td class="loss">-0.01</td></tr><tr><td class="">Admin_6</td><td class="profit">2.0K</td><td class="">32100000</td><td class="profit">0.01</td><td class="profit">0.01</td><td class="profit">0.01</td></tr><tr><td class="">Admin_7</td><td class="loss">-11.0K</td><td class="">907250000.25</td><td class="loss">-0.00</td><td class="profit">0.00</td><td class="loss">-0.00</td></tr></tbody></table></div></div>
+            <div class="table-container">
+                <div class="table-title">💼 Live Products</div>
+                <div class="table-content">
+                    <table>
+                        <thead>
+                            <tr><th>PRODUCT</th><th>LIVE_PNL</th><th>PNL%</th></tr></thead><tbody><tr><td class="">MS</td><td class="loss">-1.80L</td><td class="loss">-0.08</td></tr><tr><td class="">STNS</td><td class="profit">2.00L</td><td class="profit">0.09</td></tr></tbody></table></div></div><div class="table-container"><div class="table-title">🎯 Live Positions</div><div class="table-content">No Data Available</div></div>
             <div class="table-container">
                 <div class="table-title">🔢 Strike Analysis</div>
                 <div class="table-content">
