@@ -356,7 +356,7 @@
         <div class="metrics-grid">
 
             <div class="metric-card">
-                <div class="metric-value negative">-0.19%</div>
+                <div class="metric-value negative">-0.25%</div>
                 <div class="metric-label">📈 Live%</div>
             </div>
 
@@ -366,17 +366,17 @@
             </div>
 
             <div class="metric-card">
-                <div class="metric-value negative">-0.21%</div>
+                <div class="metric-value negative">-0.25%</div>
                 <div class="metric-label">📉 Min</div>
             </div>
 
             <div class="metric-card">
-                <div class="metric-value negative">-23.84L</div>
+                <div class="metric-value negative">-31.02L</div>
                 <div class="metric-label">💰 Live P&L</div>
             </div>
 
             <div class="metric-card">
-                <div class="metric-value neutral">25519.75</div>
+                <div class="metric-value neutral">25527.10</div>
                 <div class="metric-label">📊 Spot Price</div>
             </div>
 
@@ -386,7 +386,7 @@
             </div>
 
             <div class="metric-card">
-                <div class="metric-value neutral">09:36:48</div>
+                <div class="metric-value neutral">09:37:18</div>
                 <div class="metric-label">⏰ Last Update</div>
             </div>
 
@@ -406,9 +406,9 @@
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-        const labels    = ["08:59:33", "09:15:33", "09:16:03", "09:16:33", "09:17:03", "09:17:33", "09:18:34", "09:19:04", "09:19:35", "09:20:05", "09:20:36", "09:21:06", "09:21:37", "09:22:08", "09:22:38", "09:23:09", "09:23:40", "09:24:11", "09:25:12", "09:25:43", "09:26:13", "09:26:43", "09:27:13", "09:28:14", "09:28:45", "09:29:46", "09:30:16", "09:30:46", "09:31:16", "09:31:47", "09:32:17", "09:32:47", "09:33:17", "09:34:17", "09:35:17", "09:35:48", "09:36:18", "09:36:48"];
-        const pnlData   = [0.0, 0.0, 0.0, 11410.75, 4153.5, -53261.0, 56585.75, 73102.25, 12938.25, -20120.75, 225364.75, 305613.75, 504455.25, 340375.75, 218097.75, 360106.5, 491897.25, 468841.75, 493597.0, 748774.0, 331662.5, 399106.5, 455955.5, 596524.5, 767143.0, 620187.75, 432380.0, 489154.25, 775433.75, 650744.25, 520399.75, -422217.25, -2500904.25, -1816337.25, -1186256.5, -1358441.5, -2647398.0, -2384317.0];
-        const spotData  = [0.0, 25602.55, 25597.55, 25606.25, 25609.55, 25613.2, 25596.75, 25581.3, 25575.9, 25570.2, 25576.7, 25574.5, 25576.8, 25561.45, 25556.65, 25559.4, 25563.25, 25559.7, 25561.0, 25560.9, 25554.85, 25552.4, 25556.25, 25565.35, 25557.1, 25551.55, 25546.85, 25538.65, 25533.55, 25541.6, 25532.45, 25525.85, 25512.0, 25514.65, 25510.7, 25511.7, 25520.25, 25519.75];
+        const labels    = ["08:59:33", "09:15:33", "09:16:03", "09:16:33", "09:17:03", "09:17:33", "09:18:34", "09:19:04", "09:19:35", "09:20:05", "09:20:36", "09:21:06", "09:21:37", "09:22:08", "09:22:38", "09:23:09", "09:23:40", "09:24:11", "09:25:12", "09:25:43", "09:26:13", "09:26:43", "09:27:13", "09:28:14", "09:28:45", "09:29:46", "09:30:16", "09:30:46", "09:31:16", "09:31:47", "09:32:17", "09:32:47", "09:33:17", "09:34:17", "09:35:17", "09:35:48", "09:36:18", "09:36:48", "09:37:18"];
+        const pnlData   = [0.0, 0.0, 0.0, 11410.75, 4153.5, -53261.0, 56585.75, 73102.25, 12938.25, -20120.75, 225364.75, 305613.75, 504455.25, 340375.75, 218097.75, 360106.5, 491897.25, 468841.75, 493597.0, 748774.0, 331662.5, 399106.5, 455955.5, 596524.5, 767143.0, 620187.75, 432380.0, 489154.25, 775433.75, 650744.25, 520399.75, -422217.25, -2500904.25, -1816337.25, -1186256.5, -1358441.5, -2647398.0, -2384317.0, -3101533.5];
+        const spotData  = [0.0, 25602.55, 25597.55, 25606.25, 25609.55, 25613.2, 25596.75, 25581.3, 25575.9, 25570.2, 25576.7, 25574.5, 25576.8, 25561.45, 25556.65, 25559.4, 25563.25, 25559.7, 25561.0, 25560.9, 25554.85, 25552.4, 25556.25, 25565.35, 25557.1, 25551.55, 25546.85, 25538.65, 25533.55, 25541.6, 25532.45, 25525.85, 25512.0, 25514.65, 25510.7, 25511.7, 25520.25, 25519.75, 25527.1];
 
         new Chart(
             document.getElementById('chartCanvas').getContext('2d'),
@@ -519,7 +519,7 @@
                 <div class="table-content">
                     <table>
                         <thead>
-                            <tr><th>ADMINS</th><th>Total_pnl</th><th>MARGIN</th><th>AVG_LIVEPNL%</th><th>MAX_LIVEPNL%</th><th>MIN_LIVEPNL%</th></tr></thead><tbody><tr><td class="">ADMIN_1</td><td class="loss">-9.32L</td><td class="">453975000</td><td class="loss">-0.21</td><td class="loss">-0.14</td><td class="loss">-0.27</td></tr><tr><td class="">ADMIN_3</td><td class="loss">-14.29L</td><td class="">774075000</td><td class="loss">-0.18</td><td class="loss">-0.12</td><td class="loss">-0.23</td></tr></tbody></table></div></div>
+                            <tr><th>ADMINS</th><th>Total_pnl</th><th>MARGIN</th><th>AVG_LIVEPNL%</th><th>MAX_LIVEPNL%</th><th>MIN_LIVEPNL%</th></tr></thead><tbody><tr><td class="">ADMIN_1</td><td class="loss">-11.80L</td><td class="">453975000</td><td class="loss">-0.27</td><td class="loss">-0.21</td><td class="loss">-0.34</td></tr><tr><td class="">ADMIN_3</td><td class="loss">-18.78L</td><td class="">774075000</td><td class="loss">-0.24</td><td class="loss">-0.19</td><td class="loss">-0.31</td></tr></tbody></table></div></div>
             <div class="table-container">
                 <div class="table-title">💼 Live Products</div>
                 <div class="table-content">
